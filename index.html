@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="password.css" />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <div id="left-box">
+          <h3 id="generate-h3">GENERATE</h3>
+          <h3 id="a-random-h3">A RANDOM</h3>
+          <h2 id="password-h2">PASSWORD</h2>
+          <div id="password-length">
+            <input type="radio" name="password-len" id="pass-13" value="13" />
+            <label for="pass-13">13 Characters</label> <br>
+            <input type="radio" name="password-len" id="pass-8" value="8" ">
+            <label for="pass-8"> 8 Characters </label>
+          </div>
+
+          <button id="generate-pass" onclick="generatePass()">
+            <img id="key-icon" src="/icons8-key.svg" alt="" /> Generate
+            Passwords
+          </button>
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+          <h3 class="right-box-text">
+            <p id="green-text">Choose your password below.</p>
+            First by choosing the length of 13 or 8 characters long and then clicking on Generate Passwords button to the left. When you click on one of the chosen to your liking passwords bellow, it will be automatically saved to your downloads folder as a text file. <br />
+          </h3>
+        </div>
+        <!-- <div id="password-length">
+          <input type="radio" name="password-len" id="pass-13" value="13" />
+          <label for="pass-13">
+            13 Characters &nbsp; &nbsp; &nbsp; &nbsp; OR &nbsp;&nbsp; &nbsp;
+            &nbsp;
+          </label>
+          <input type="radio" name="password-len" id="pass-8" value="8" ">
+          <label for="pass-8"> 8 Characters </label>
+        </div> -->
+        <div id="right-box">
+          <button id="pass1" class="password-button">*</button>
+          <button id="pass2" class="password-button">*</button>
+          <button id="pass3" class="password-button">*</button>
+          <button id="pass4" class="password-button">*</button>
+          <button id="pass5" class="password-button">*</button>
+          <button id="pass6" class="password-button">*</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/password.js"></script>
+    <script src="/FileSaver.js"></script>
+  </body>
+</html>
